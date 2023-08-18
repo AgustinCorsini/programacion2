@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    padding: 10px;
+}
+
+.contenido{
+    width: 200px;
+    display:inline-table;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+}
