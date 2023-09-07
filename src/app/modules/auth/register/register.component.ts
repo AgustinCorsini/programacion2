@@ -23,8 +23,8 @@ export class RegisterComponent {
   //importacion del modelo
   usuarios: Usuario = {
     uid: '',
-    nombre1: '',
     nombre: '',
+    email: '',
     rol: '',
     contrasena: ''
 }

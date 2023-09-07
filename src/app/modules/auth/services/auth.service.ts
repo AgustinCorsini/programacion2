@@ -6,6 +6,18 @@ import { Usuario } from 'src/app/models/usuario';
 providedIn: 'root'
 })
 export class AuthService {
+
+//Funcion para iniciar sesion
+iniciarSesion(email: string, contrasena: string){
+  return this.auth.signInWithEmailAndPassword(email, contrasena);
+}
+
+//Funcion para cerrar sesion
+cerrarSesion(){
+  return this.auth.signOut();
+}
+
+
 //refereciar la autenticacion de firebase
 
 constructor(public auth: AngularFireAuth) { }

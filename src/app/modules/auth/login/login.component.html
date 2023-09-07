@@ -1,1 +1,21 @@
-<p>login works!</p>
+<div class="container">
+  <div class="row">
+    <h1>Inicia Sesión</h1>
+    <i class="material-icons" style="font-size: 200px;">person</i>
+
+    <mat-formn-field appearance="fill-">
+      <mat-label>Ingrese su email:</mat-label>
+      <input matInput [(ngModel)]="usuarios.email">
+    </mat-formn-field>
+
+    <mat-form-field>
+      <mat-label>Ingrese su contraseña:</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="usuarios.contrasena">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <button class="boton" mat-raised-button color="primary">Ingresar</button>
+  </div>
+</div>
